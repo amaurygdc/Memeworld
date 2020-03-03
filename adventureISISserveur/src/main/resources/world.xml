@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<world
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='jaxb/worldShema/worldSchema.xsd'>
+    <name>Dank World</name>
+    <logo></logo>
+    <money>4</money>
+    <score>0</score>
+    <totalangels>0</totalangels>
+    <activeangels>0</activeangels>
+    <angelbonus>1.02</angelbonus>
+    <lastupdate>0</lastupdate>
+    <products>
+        <product>
+            <id>1</id>
+            <name>Troll face</name>
+            <logo>TrollFace.jpg</logo>
+            <cout>4</cout>
+            <croissance>1.07</croissance>
+            <revenu>1</revenu>
+            <vitesse>500</vitesse>
+            <quantite>0</quantite>
+            <timeleft>500</timeleft>
+            <managerUnlocked>false</managerUnlocked>
+            <palliers>
+                <pallier>
+                    <name>the troll</name>
+                    <logo>TrollFace.jpg</logo>
+                    <seuil>30</seuil>
+                    <idcible>1</idcible>
+                    <ratio>2</ratio>
+                    <typeratio>GAIN</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+                <pallier>
+                    <name>trollololo</name>
+                    <logo>TrollFace.jpg</logo>
+                    <seuil>100</seuil>
+                    <idcible>1</idcible>
+                    <ratio>4</ratio>
+                    <typeratio>GAIN</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+                <pallier>
+                    <name>troll exploreur</name>
+                    <logo>TrollFace.jpg</logo>
+                    <seuil>200</seuil>
+                    <idcible>1</idcible>
+                    <ratio>6</ratio>
+                    <typeratio>VITESSE</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+            </palliers>
+        </product>
+        <product>
+            <id>2</id>
+            <name>Freddy</name>
+            <logo>freddy.jpg</logo>
+            <cout>55</cout>
+            <croissance>1.15</croissance>
+            <revenu>70</revenu>
+            <vitesse>3000</vitesse>
+            <quantite>0</quantite>
+            <timeleft>3000</timeleft>
+            <managerUnlocked>false</managerUnlocked>
+            <palliers>
+                <pallier>
+                    <name>Barcelona</name>
+                    <logo>freddy.jpg</logo>
+                    <seuil>60</seuil>
+                    <idcible>2</idcible>
+                    <ratio>3</ratio>
+                    <typeratio>GAIN</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+                <pallier>
+                    <name>We Will Rock You</name>
+                    <logo>freddy.jpg</logo>
+                    <seuil>200</seuil>
+                    <idcible>2</idcible>
+                    <ratio>5</ratio>
+                    <typeratio>VITESSE</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+                <pallier>
+                    <name>fin d'une carriere</name>
+                    <logo>freddy.jpg</logo>
+                    <seuil>300</seuil>
+                    <idcible>2</idcible>
+                    <ratio>6</ratio>
+                    <typeratio>GAIN</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+            </palliers>
+        </product>
+        <product>
+            <id>3</id>
+            <name>Pepe the frog</name>
+            <logo>pepe.jpg</logo>
+            <cout>666</cout>
+            <croissance>1.13</croissance>
+            <revenu>420</revenu>
+            <vitesse>6000</vitesse>
+            <quantite>0</quantite>
+            <timeleft>6000</timeleft>
+            <managerUnlocked>false</managerUnlocked>
+            <palliers>
+                <pallier>
+                    <name>happy pepe</name>
+                    <logo>pepe.jpg</logo>
+                    <seuil>100</seuil>
+                    <idcible>3</idcible>
+                    <ratio>3</ratio>
+                    <typeratio>VITESSE</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+                <pallier>
+                    <name>happy pepe</name>
+                    <logo>pepe.jpg</logo>
+                    <seuil>200</seuil>
+                    <idcible>3</idcible>
+                    <ratio>5</ratio>
+                    <typeratio>GAIN</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+                <pallier>
+                    <name>trans pepe</name>
+                    <logo>pepe.jpg</logo>
+                    <seuil>266</seuil>
+                    <idcible>3</idcible>
+                    <ratio>8</ratio>
+                    <typeratio>VITESSE</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+            </palliers>
+        </product>
+    </products>
+    <allunlocks>
+        
+        
+        
+        
+        
+        
+    </allunlocks>
+    <upgrades>
+    </upgrades>
+    <angelupgrades>
+    </angelupgrades>
+    <managers>
+        <pallier>
+            <name>manager Troll</name>
+            <logo>TrollFace.jpg</logo>
+            <seuil>600</seuil>
+            <idcible>1</idcible>
+            <ratio>0</ratio>
+            <typeratio>VITESSE</typeratio>
+            <unlocked>false</unlocked>
+        </pallier>
+    </managers>
+
+</world>
