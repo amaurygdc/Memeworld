@@ -165,5 +165,16 @@ and open the template in the editor.
             <unlocked>false</unlocked>
         </pallier>
     </managers>
+    <managers>
+        <pallier>
+            <name>dat boi/name>
+            <logo>Dat_Boi.jpg</logo>
+            <seuil>1000</seuil>
+            <idcible>2</idcible>
+            <ratio>0</ratio>
+            <typeratio>VITESSE</typeratio>
+            <unlocked>false</unlocked>
+        </pallier>
+    </managers>
 
 </world>
