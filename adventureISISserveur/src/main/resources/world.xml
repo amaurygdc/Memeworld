@@ -167,7 +167,7 @@ and open the template in the editor.
     </managers>
     <managers>
         <pallier>
-            <name>dat boi/name>
+            <name>dat boi</name>
             <logo>Dat_Boi.jpg</logo>
             <seuil>1000</seuil>
             <idcible>2</idcible>
