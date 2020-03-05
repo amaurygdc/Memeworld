@@ -31,7 +31,7 @@ and open the template in the editor.
             <managerUnlocked>false</managerUnlocked>
             <palliers>
                 <pallier>
-                    <name>the troll</name>
+                    <name>Rage</name>
                     <logo>TrollFace.jpg</logo>
                     <seuil>30</seuil>
                     <idcible>1</idcible>
@@ -49,7 +49,7 @@ and open the template in the editor.
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>troll exploreur</name>
+                    <name>Meme genesis</name>
                     <logo>TrollFace.jpg</logo>
                     <seuil>200</seuil>
                     <idcible>1</idcible>
@@ -61,18 +61,18 @@ and open the template in the editor.
         </product>
         <product>
             <id>2</id>
-            <name>Freddy</name>
+            <name>Epic Win</name>
             <logo>freddy.jpg</logo>
-            <cout>55</cout>
+            <cout>25</cout>
             <croissance>1.15</croissance>
             <revenu>70</revenu>
-            <vitesse>3000</vitesse>
+            <vitesse>2000</vitesse>
             <quantite>0</quantite>
             <timeleft>3000</timeleft>
             <managerUnlocked>false</managerUnlocked>
             <palliers>
                 <pallier>
-                    <name>Barcelona</name>
+                    <name>Drake Boss</name>
                     <logo>freddy.jpg</logo>
                     <seuil>60</seuil>
                     <idcible>2</idcible>
@@ -81,7 +81,7 @@ and open the template in the editor.
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>We Will Rock You</name>
+                    <name>Bohemian Rhapsody</name>
                     <logo>freddy.jpg</logo>
                     <seuil>200</seuil>
                     <idcible>2</idcible>
@@ -90,7 +90,7 @@ and open the template in the editor.
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>fin d'une carriere</name>
+                    <name>Final Show</name>
                     <logo>freddy.jpg</logo>
                     <seuil>300</seuil>
                     <idcible>2</idcible>
@@ -113,7 +113,7 @@ and open the template in the editor.
             <managerUnlocked>false</managerUnlocked>
             <palliers>
                 <pallier>
-                    <name>happy pepe</name>
+                    <name>Rage Pepe</name>
                     <logo>pepe.jpg</logo>
                     <seuil>100</seuil>
                     <idcible>3</idcible>
@@ -122,7 +122,7 @@ and open the template in the editor.
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>happy pepe</name>
+                    <name>Faster Pepe</name>
                     <logo>pepe.jpg</logo>
                     <seuil>200</seuil>
                     <idcible>3</idcible>
@@ -131,10 +131,133 @@ and open the template in the editor.
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>trans pepe</name>
+                    <name>Rarest Pepe</name>
+                    <logo>pepe.jpg</logo>
+                    <seuil>2660</seuil>
+                    <idcible>3</idcible>
+                    <ratio>8</ratio>
+                    <typeratio>VITESSE</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+            </palliers>
+        </product>
+        <product>
+            <id>4</id>
+            <name>Sponge Bob</name>
+            <logo>pepe.jpg</logo>
+            <cout>5000</cout>
+            <croissance>1.12</croissance>
+            <revenu>2500</revenu>
+            <vitesse>10000</vitesse>
+            <quantite>0</quantite>
+            <timeleft>10000</timeleft>
+            <managerUnlocked>false</managerUnlocked>
+            <palliers>
+                <pallier>
+                    <name>Devolution</name>
+                    <logo>pepe.jpg</logo>
+                    <seuil>50</seuil>
+                    <idcible>4</idcible>
+                    <ratio>3</ratio>
+                    <typeratio>VITESSE</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+                <pallier>
+                    <name>Evolution</name>
+                    <logo>pepe.jpg</logo>
+                    <seuil>5</seuil>
+                    <idcible>4</idcible>
+                    <ratio>5</ratio>
+                    <typeratio>GAIN</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+                <pallier>
+                    <name>Revolution</name>
+                    <logo>pepe.jpg</logo>
+                    <seuil>200</seuil>
+                    <idcible>4</idcible>
+                    <ratio>8</ratio>
+                    <typeratio>VITESSE</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+            </palliers>
+        </product>
+        <product>
+            <id>5</id>
+            <name>Grumpy Cat</name>
+            <logo>GRUMPYCAT.jpg</logo>
+            <cout>10000</cout>
+            <croissance>1.12</croissance>
+            <revenu>8000</revenu>
+            <vitesse>100000</vitesse>
+            <quantite>0</quantite>
+            <timeleft>100000</timeleft>
+            <managerUnlocked>false</managerUnlocked>
+            <palliers>
+                <pallier>
+                    <name>Legendary cat</name>
+                    <logo>Nyan_Cat.jpg</logo>
+                    <seuil>100</seuil>
+                    <idcible>5</idcible>
+                    <ratio>3</ratio>
+                    <typeratio>VITESSE</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+                <pallier>
+                    <name>Internet Mascot</name>
+                    <logo>Nyan_Cat.jpg</logo>
+                    <seuil>200</seuil>
+                    <idcible>3</idcible>
+                    <ratio>5</ratio>
+                    <typeratio>GAIN</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+                <pallier>
+                    <name>MIAAAAAAAAAOU</name>
+                    <logo>Nyan_Cat.jpg</logo>
+                    <seuil>250</seuil>
+                    <idcible>5</idcible>
+                    <ratio>8</ratio>
+                    <typeratio>VITESSE</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+            </palliers>
+        </product>
+        <product>
+            <id>6</id>
+            <name>WHO</name>
+            <logo>small_brain</logo>
+            <cout>100000</cout>
+            <croissance>1.11</croissance>
+            <revenu>50000</revenu>
+            <vitesse>500</vitesse>
+            <quantite>0</quantite>
+            <timeleft>50000</timeleft>
+            <managerUnlocked>false</managerUnlocked>
+            <palliers>
+                <pallier>
+                    <name>WHOM</name>
+                    <logo>medium_brain.jpg</logo>
+                    <seuil>100</seuil>
+                    <idcible>6</idcible>
+                    <ratio>3</ratio>
+                    <typeratio>VITESSE</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+                <pallier>
+                    <name>WHOM'ST</name>
+                    <logo>medium_brain.jpg</logo>
+                    <seuil>200</seuil>
+                    <idcible>6</idcible>
+                    <ratio>5</ratio>
+                    <typeratio>GAIN</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+                <pallier>
+                    <name>medium_brain.jpg</name>
                     <logo>pepe.jpg</logo>
                     <seuil>266</seuil>
-                    <idcible>3</idcible>
+                    <idcible>6</idcible>
                     <ratio>8</ratio>
                     <typeratio>VITESSE</typeratio>
                     <unlocked>false</unlocked>
@@ -143,12 +266,15 @@ and open the template in the editor.
         </product>
     </products>
     <allunlocks>
-        
-        
-        
-        
-        
-        
+        <pallier>
+            <name>Gotta go fast</name>
+            <logo>S_P_E_E_D.jpg</logo>
+            <seuil>10000000000</seuil>
+            <idcible>toutlemonde</idcible>
+            <ratio>0</ratio>
+            <typeratio>VITESSE</typeratio>
+            <unlocked>false</unlocked>
+        </pallier>                
     </allunlocks>
     <upgrades>
     </upgrades>
@@ -156,8 +282,8 @@ and open the template in the editor.
     </angelupgrades>
     <managers>
         <pallier>
-            <name>manager Troll</name>
-            <logo>TrollFace.jpg</logo>
+            <name>TrollDad</name>
+            <logo>trolldad.jpg</logo>
             <seuil>600</seuil>
             <idcible>1</idcible>
             <ratio>0</ratio>
@@ -165,16 +291,58 @@ and open the template in the editor.
             <unlocked>false</unlocked>
         </pallier>
     </managers>
+            <managers>
+            <pallier>
+                <name>Mr. Worldwide</name>
+                <logo>Pitbull.png</logo>
+                <seuil>1000</seuil>
+                <idcible>2</idcible>
+                <ratio>0</ratio>
+                <typeratio>VITESSE</typeratio>
+                <unlocked>false</unlocked>
+            </pallier>
+        </managers>
     <managers>
         <pallier>
             <name>dat boi</name>
             <logo>Dat_Boi.jpg</logo>
-            <seuil>1000</seuil>
-            <idcible>2</idcible>
+            <seuil>5000</seuil>
+            <idcible>3</idcible>
             <ratio>0</ratio>
             <typeratio>VITESSE</typeratio>
             <unlocked>false</unlocked>
         </pallier>
-    </managers>
-
+        <managers>
+            <pallier>
+                <name>Mr. Crabs</name>
+                <logo>Crabs.jpg</logo>
+                <seuil>250 000</seuil>
+                <idcible>4</idcible>
+                <ratio>0</ratio>
+                <typeratio>VITESSE</typeratio>
+                <unlocked>false</unlocked>
+            </pallier>
+        </managers>
+        <managers>
+            <pallier>
+                <name>Serious Cat</name>
+                <logo>Boss_cat.PNG</logo>
+                <seuil>1000000</seuil>
+                <idcible>5</idcible>
+                <ratio>0</ratio>
+                <typeratio>VITESSE</typeratio>
+                <unlocked>false</unlocked>
+            </pallier>
+        </managers>
+        <managers>
+            <pallier>
+                <name>Qui ça ? Qui ça ?</name>
+                <logo>big_brain_time.jpg</logo>
+                <seuil>1000000000</seuil>
+                <idcible>6</idcible>
+                <ratio>0</ratio>
+                <typeratio>VITESSE</typeratio>
+                <unlocked>false</unlocked>
+            </pallier>
+        </managers>
 </world>
