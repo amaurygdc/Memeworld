@@ -30,7 +30,6 @@ public class Webservices {
     @GET
     @Path("world")
     @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})    public Response getWorld() {
-        System.out.println("test");
         return Response.ok(services.getWorld()).build();
     }
 }

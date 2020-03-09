@@ -19,5 +19,6 @@ import org.springframework.stereotype.Component;
 public class JerseyConfig extends ResourceConfig {
     public JerseyConfig(){
         register(Webservices.class);
+        register(CORSResponseFilter.class);
     }
 }
