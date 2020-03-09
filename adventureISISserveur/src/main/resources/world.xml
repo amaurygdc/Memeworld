@@ -36,7 +36,7 @@ and open the template in the editor.
                     <seuil>30</seuil>
                     <idcible>1</idcible>
                     <ratio>2</ratio>
-                    <typeratio>GAIN</typeratio>
+                    <typeratio>VITESSE</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -54,7 +54,7 @@ and open the template in the editor.
                     <seuil>200</seuil>
                     <idcible>1</idcible>
                     <ratio>6</ratio>
-                    <typeratio>VITESSE</typeratio>
+                    <typeratio>ANGE</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
             </palliers>
@@ -63,12 +63,12 @@ and open the template in the editor.
             <id>2</id>
             <name>Epic Win</name>
             <logo>freddy.jpg</logo>
-            <cout>25</cout>
+            <cout>70</cout>
             <croissance>1.15</croissance>
             <revenu>70</revenu>
             <vitesse>2000</vitesse>
             <quantite>0</quantite>
-            <timeleft>3000</timeleft>
+            <timeleft>2000</timeleft>
             <managerUnlocked>false</managerUnlocked>
             <palliers>
                 <pallier>
@@ -77,7 +77,7 @@ and open the template in the editor.
                     <seuil>60</seuil>
                     <idcible>2</idcible>
                     <ratio>3</ratio>
-                    <typeratio>GAIN</typeratio>
+                    <typeratio>VITESSE</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -118,7 +118,7 @@ and open the template in the editor.
                     <seuil>100</seuil>
                     <idcible>3</idcible>
                     <ratio>3</ratio>
-                    <typeratio>VITESSE</typeratio>
+                    <typeratio>ANGE</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -127,7 +127,7 @@ and open the template in the editor.
                     <seuil>200</seuil>
                     <idcible>3</idcible>
                     <ratio>5</ratio>
-                    <typeratio>GAIN</typeratio>
+                    <typeratio>ANGE</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -136,7 +136,7 @@ and open the template in the editor.
                     <seuil>2660</seuil>
                     <idcible>3</idcible>
                     <ratio>8</ratio>
-                    <typeratio>VITESSE</typeratio>
+                    <typeratio>ANGE</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
             </palliers>
@@ -144,18 +144,18 @@ and open the template in the editor.
         <product>
             <id>4</id>
             <name>Sponge Bob</name>
-            <logo>pepe.jpg</logo>
+            <logo>Sponge_Bob.jpg</logo>
             <cout>5000</cout>
             <croissance>1.12</croissance>
-            <revenu>2500</revenu>
+            <revenu>7500</revenu>
             <vitesse>10000</vitesse>
             <quantite>0</quantite>
             <timeleft>10000</timeleft>
             <managerUnlocked>false</managerUnlocked>
             <palliers>
                 <pallier>
-                    <name>Devolution</name>
-                    <logo>pepe.jpg</logo>
+                    <name>Are you ready kids ?</name>
+                    <logo>Sponge_Bob_Caveman.jpg</logo>
                     <seuil>50</seuil>
                     <idcible>4</idcible>
                     <ratio>3</ratio>
@@ -163,8 +163,8 @@ and open the template in the editor.
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>Evolution</name>
-                    <logo>pepe.jpg</logo>
+                    <name>Aye Aye Captain</name>
+                    <logo>Sponge_Bob_Caveman.jpg</logo>
                     <seuil>5</seuil>
                     <idcible>4</idcible>
                     <ratio>5</ratio>
@@ -172,12 +172,12 @@ and open the template in the editor.
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>Revolution</name>
-                    <logo>pepe.jpg</logo>
+                    <name>I can't hear you</name>
+                    <logo>Sponge_Bob_Caveman.jpg</logo>
                     <seuil>200</seuil>
                     <idcible>4</idcible>
                     <ratio>8</ratio>
-                    <typeratio>VITESSE</typeratio>
+                    <typeratio>ANGE</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
             </palliers>
@@ -188,7 +188,7 @@ and open the template in the editor.
             <logo>GRUMPYCAT.jpg</logo>
             <cout>10000</cout>
             <croissance>1.12</croissance>
-            <revenu>8000</revenu>
+            <revenu>15000</revenu>
             <vitesse>100000</vitesse>
             <quantite>0</quantite>
             <timeleft>100000</timeleft>
@@ -200,7 +200,7 @@ and open the template in the editor.
                     <seuil>100</seuil>
                     <idcible>5</idcible>
                     <ratio>3</ratio>
-                    <typeratio>VITESSE</typeratio>
+                    <typeratio>GAIN</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -209,7 +209,7 @@ and open the template in the editor.
                     <seuil>200</seuil>
                     <idcible>3</idcible>
                     <ratio>5</ratio>
-                    <typeratio>GAIN</typeratio>
+                    <typeratio>VITESSE</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -218,7 +218,7 @@ and open the template in the editor.
                     <seuil>250</seuil>
                     <idcible>5</idcible>
                     <ratio>8</ratio>
-                    <typeratio>VITESSE</typeratio>
+                    <typeratio>ANGE</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
             </palliers>
@@ -229,7 +229,7 @@ and open the template in the editor.
             <logo>small_brain</logo>
             <cout>100000</cout>
             <croissance>1.11</croissance>
-            <revenu>50000</revenu>
+            <revenu>200000</revenu>
             <vitesse>500</vitesse>
             <quantite>0</quantite>
             <timeleft>50000</timeleft>
@@ -241,7 +241,7 @@ and open the template in the editor.
                     <seuil>100</seuil>
                     <idcible>6</idcible>
                     <ratio>3</ratio>
-                    <typeratio>VITESSE</typeratio>
+                    <typeratio>GAIN</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -269,11 +269,11 @@ and open the template in the editor.
         <pallier>
             <name>Gotta go fast</name>
             <logo>S_P_E_E_D.jpg</logo>
-            <seuil>10000000000</seuil>
-            <idcible>toutlemonde</idcible>
-            <ratio>0</ratio>
-            <typeratio>VITESSE</typeratio>
-            <unlocked>false</unlocked>
+            <seuil>10</seuil>
+            <idcible>0</idcible>
+            <ratio>4</ratio>
+                <typeratio>GAIN</typeratio>
+                <unlocked>false</unlocked>
         </pallier>                
     </allunlocks>
     <upgrades>
@@ -287,62 +287,53 @@ and open the template in the editor.
             <seuil>600</seuil>
             <idcible>1</idcible>
             <ratio>0</ratio>
-            <typeratio>VITESSE</typeratio>
+            <typeratio>0</typeratio>
             <unlocked>false</unlocked>
         </pallier>
-    </managers>
-            <managers>
-            <pallier>
-                <name>Mr. Worldwide</name>
-                <logo>Pitbull.png</logo>
-                <seuil>1000</seuil>
-                <idcible>2</idcible>
-                <ratio>0</ratio>
-                <typeratio>VITESSE</typeratio>
-                <unlocked>false</unlocked>
-            </pallier>
-        </managers>
-    <managers>
+        <pallier>
+            <name>Mr. Worldwide</name>
+            <logo>Pitbull.png</logo>
+            <seuil>1000</seuil>
+            <idcible>2</idcible>
+            <ratio>0</ratio>
+            <typeratio>0</typeratio>
+            <unlocked>false</unlocked>
+        </pallier>
         <pallier>
             <name>dat boi</name>
             <logo>Dat_Boi.jpg</logo>
             <seuil>5000</seuil>
             <idcible>3</idcible>
             <ratio>0</ratio>
-            <typeratio>VITESSE</typeratio>
+            <typeratio>0</typeratio>
             <unlocked>false</unlocked>
         </pallier>
-        <managers>
-            <pallier>
-                <name>Mr. Crabs</name>
-                <logo>Crabs.jpg</logo>
-                <seuil>250 000</seuil>
-                <idcible>4</idcible>
-                <ratio>0</ratio>
-                <typeratio>VITESSE</typeratio>
-                <unlocked>false</unlocked>
-            </pallier>
-        </managers>
-        <managers>
-            <pallier>
-                <name>Serious Cat</name>
-                <logo>Boss_cat.PNG</logo>
-                <seuil>1000000</seuil>
-                <idcible>5</idcible>
-                <ratio>0</ratio>
-                <typeratio>VITESSE</typeratio>
-                <unlocked>false</unlocked>
-            </pallier>
-        </managers>
-        <managers>
-            <pallier>
-                <name>Qui ça ? Qui ça ?</name>
-                <logo>big_brain_time.jpg</logo>
-                <seuil>1000000000</seuil>
-                <idcible>6</idcible>
-                <ratio>0</ratio>
-                <typeratio>VITESSE</typeratio>
-                <unlocked>false</unlocked>
-            </pallier>
-        </managers>
+        <pallier>
+            <name>AYE AYE CAPTAIN</name>
+            <logo>Crabs.jpg</logo>
+            <seuil>250 000</seuil>
+            <idcible>4</idcible>
+            <ratio>0</ratio>
+            <typeratio>0</typeratio>
+            <unlocked>false</unlocked>
+        </pallier>
+        <pallier>
+            <name>Serious Cat</name>
+            <logo>Boss_cat.PNG</logo>
+            <seuil>1000000</seuil>
+            <idcible>5</idcible>
+            <ratio>0</ratio>
+            <typeratio>0</typeratio>
+            <unlocked>false</unlocked>
+        </pallier>
+        <pallier>
+            <name>Qui ça ? Qui ça ?</name>
+            <logo>big_brain_time.jpg</logo>
+            <seuil>1000000000</seuil>
+            <idcible>6</idcible>
+            <ratio>0</ratio>
+            <typeratio>0</typeratio>
+            <unlocked>false</unlocked>
+        </pallier>
+    </managers>
 </world>
