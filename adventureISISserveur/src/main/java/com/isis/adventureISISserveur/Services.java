@@ -25,10 +25,10 @@ public class Services {
     static World world = new World();
     String path = "c:/temp";
 
-    public World readWorldFromXml() {
+    public World readWorldFromXml(String pseudo) {
         JAXBContext jaxbContext;
         try {
-            InputStream input=getClass().getClassLoader().getResourceAsStream("world.xml");
+            InputStream input=getClass().getClassLoader().getResourceAsStream(pseudo+"world.xml");
             jaxbContext = JAXBContext.newInstance(World.class);
             Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
             world = (World) jaxbUnmarshaller.unmarshal(input);
@@ -39,10 +39,10 @@ public class Services {
         return world;
     }
 
-    public void saveWorldToXml(World world) {
+    public void saveWorldToXml(String pseudo) {
         JAXBContext jaxbContext;
         try {
-            OutputStream output = new FileOutputStream("newWorld.xml");
+            OutputStream output = new FileOutputStream(pseudo+"newWorld.xml");
             jaxbContext = JAXBContext.newInstance(World.class);
             Marshaller march = jaxbContext.createMarshaller();
             march.marshal(world, output);
@@ -52,8 +52,8 @@ public class Services {
         }
     }
 
-    public World getWorld() {
-        return readWorldFromXml();
+    public World getWorld(String pseudo) {
+        return readWorldFromXml(pseudo);
     }
     
     
