@@ -10,7 +10,7 @@ and open the template in the editor.
     xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
     xsi:noNamespaceSchemaLocation='jaxb/worldShema/worldSchema.xsd'>
     <name>Dank World</name>
-    <logo></logo>
+    <logo>Memes.jpeg</logo>
     <money>4</money>
     <score>0</score>
     <totalangels>0</totalangels>
