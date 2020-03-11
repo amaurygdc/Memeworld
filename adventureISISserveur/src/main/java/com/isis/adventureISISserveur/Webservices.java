@@ -5,8 +5,12 @@
  */
 package com.isis.adventureISISserveur;
 
+import generated.PallierType;
+import generated.ProductType;
 import javax.servlet.http.HttpServletRequest;
+import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
+import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.Context;
@@ -32,6 +36,22 @@ public class Webservices {
     @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     public Response getXml(@Context HttpServletRequest request) {
         String username = request.getHeader("X-user");
-        return Response.ok(services.getWorld(username)).build();    
+        return Response.ok(services.getWorld(username)).build();
     }
+
+//    @PUT
+//    @Path("poduct")
+//    @Consumes({MediaType.APPLICATION_JSON})
+//    public Response editProduct (String data ) {
+//        ProductType product = new Gson().fromJson(data, ProductType.class);
+//        return Response.ok(services.updateProduct(data, product)).build();
+//    }
+//
+//    @PUT
+//    @Path("poduct")
+//    @Consumes({MediaType.APPLICATION_JSON})
+//    public Response editManager (String data ) {
+//        PallierType manager = new Gson().fromJson(data, PallierType.class);
+//        return Response.ok(services.updateManager(data, manager)).build();
+//    }
 }
