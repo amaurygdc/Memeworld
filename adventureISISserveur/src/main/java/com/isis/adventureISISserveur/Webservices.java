@@ -39,19 +39,17 @@ public class Webservices {
         return Response.ok(services.getWorld(username)).build();
     }
 
-//    @PUT
-//    @Path("poduct")
-//    @Consumes({MediaType.APPLICATION_JSON})
-//    public Response editProduct (String data ) {
-//        ProductType product = new Gson().fromJson(data, ProductType.class);
-//        return Response.ok(services.updateProduct(data, product)).build();
-//    }
-//
-//    @PUT
-//    @Path("poduct")
-//    @Consumes({MediaType.APPLICATION_JSON})
-//    public Response editManager (String data ) {
-//        PallierType manager = new Gson().fromJson(data, PallierType.class);
-//        return Response.ok(services.updateManager(data, manager)).build();
-//    }
+    @PUT
+    @Path("poduct")
+    @Consumes({MediaType.APPLICATION_JSON})
+    public Response editProduct (String data, ProductType product) {
+        return Response.ok(services.updateProduct(data, product)).build();
+    }
+
+    @PUT
+    @Path("poduct")
+    @Consumes({MediaType.APPLICATION_JSON})
+    public Response editManager (String data, PallierType manager ) {
+        return Response.ok(services.updateManager(data, manager)).build();
+    }
 }
