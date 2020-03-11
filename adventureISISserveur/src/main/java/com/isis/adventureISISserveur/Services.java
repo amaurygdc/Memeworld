@@ -2,6 +2,7 @@ package com.isis.adventureISISserveur;
 
 import generated.World;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -26,17 +27,20 @@ public class Services {
 
     public World readWorldFromXml(String pseudo) {
         JAXBContext jaxbContext;
-        File f = new File(pseudo + "world.xml");
+        InputStream input;
         try {
-            InputStream input;
-            if (f.isFile()) {
-                input = getClass().getClassLoader().getResourceAsStream(pseudo + "world.xml");
-            } else {
+            try {
+                File f = new File(pseudo + "world.xml");
+                input = new FileInputStream(f);
+            } catch (Exception e) {
+
                 input = getClass().getClassLoader().getResourceAsStream("world.xml");
+                System.out.println("pas de monde associé au joueur" + e.getMessage());
             }
             jaxbContext = JAXBContext.newInstance(World.class);
             Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
             world = (World) jaxbUnmarshaller.unmarshal(input);
+
         } catch (JAXBException ex) {
             System.out.println("Erreur lecture du fichier:" + ex.getMessage());
             ex.printStackTrace();
@@ -44,7 +48,7 @@ public class Services {
         return world;
     }
 
-    public void saveWorldToXml(String pseudo) {
+    public void saveWorldToXml(World world, String pseudo) {
         JAXBContext jaxbContext;
         try {
             OutputStream output = new FileOutputStream(pseudo + "world.xml");
