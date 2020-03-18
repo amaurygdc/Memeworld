@@ -324,7 +324,7 @@ and open the template in the editor.
         </pallier>
         <pallier>
             <name>Passer des dettes aux rattrapages</name>
-            <logo>./webapp/parjour.png</logo>
+            <logo>./webapp/parkour.png</logo>
             <seuil>100</seuil>
             <idcible>6</idcible>
             <ratio>5</ratio>
