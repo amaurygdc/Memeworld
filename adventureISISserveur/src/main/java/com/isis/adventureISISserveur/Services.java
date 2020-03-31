@@ -11,12 +11,15 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.HashMap;
+import java.util.concurrent.Semaphore;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
+import org.apache.tomcat.util.http.fileupload.FileUtils;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -28,46 +31,68 @@ import javax.xml.bind.Unmarshaller;
  * @author cperrinc
  */
 public class Services {
+    private static JAXBContext context;
+    private static Marshaller writer;
+    private static Unmarshaller reader;
+
+    private static HashMap<String, World> cache = new HashMap<String, World>();
+
+    private static final Semaphore cacheAccess = new Semaphore(1);
+    private static final Semaphore fileAccess = new Semaphore(1);
+
+
 
     static World world = new World();
     String path = "c:/temp";
 
-
-    public World readWorldFromXml(String pseudo) {
+    public static World readWorldFromXml(String username){
         JAXBContext jaxbContext;
         try {
-            File f = new File(pseudo + "world.xml");
-            jaxbContext = JAXBContext.newInstance(World.class);
-            Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
-            world = (World) jaxbUnmarshaller.unmarshal(f);
-
-        } catch (JAXBException ex) {
-            System.out.println("Erreur lecture du fichier:" + ex.getMessage());
-            try {
+            if(cache.containsKey(username)){
+                return cache.get(username);
+            }
+            fileAccess.acquire();
+            // On va vérifier que le monde existe
+            File f = new File(username+"world.xml");
+            if(f.exists()){
+                FileInputStream input = new FileInputStream(username+"world.xml");
+                System.out.println(f.getAbsolutePath());
+                 jaxbContext = JAXBContext.newInstance(World.class);
+                 Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
+                 world = (World) jaxbUnmarshaller.unmarshal(f);
+                fileAccess.release();
+                System.out.print("mle,e,");
+                return world;
+            }
+            else {
+                InputStream input = FileUtils.class.getClassLoader().getResourceAsStream("world.xml");
                 JAXBContext cont = JAXBContext.newInstance(World.class);
                 Unmarshaller u = cont.createUnmarshaller();
-                world = (World) u.unmarshal(new File("testworld.xml"));
+                world = (World) u.unmarshal(new File("world.xml"));
+                fileAccess.release();
+                return world;
             }
-            catch (JAXBException e) {
-                e.printStackTrace();
-            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
         }
-        return world;
     }
 
-    public void saveWorldToXml(World world, String pseudo) {
-        JAXBContext jaxbContext;
+    
+
+    public static boolean saveWorldToXml(World world, String username){
         try {
-            
-            OutputStream output = new FileOutputStream(pseudo + "world.xml");
-            jaxbContext = JAXBContext.newInstance(World.class);
-            Marshaller march = jaxbContext.createMarshaller();
-            march.marshal(world, output);
-        } catch (Exception ex) {
-            System.out.println("Erreur écriture du fichier:" + ex.getMessage());
-            ex.printStackTrace();
+            cacheAccess.acquire();
+            cache.put(username, world);
+            cacheAccess.release();
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
         }
     }
+
 
     @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     public World getWorld(String pseudo) throws JAXBException, FileNotFoundException {
@@ -92,7 +117,7 @@ public class Services {
 
         w.setLastupdate(System.currentTimeMillis());
         this.saveWorldToXml(w, pseudo);
-        return this.readWorldFromXml(pseudo);
+        return w;
     }
 
     // prend en paramètre le pseudo du joueur et le produit
@@ -101,6 +126,7 @@ public class Services {
     public Boolean updateProduct(String username, ProductType newproduct) throws JAXBException, FileNotFoundException {
         // aller chercher le monde qui correspond au joueur
         World world = getWorld(username);
+        System.out.print("chibron");
         // trouver dans ce monde, le produit équivalent à celui passé
         // en paramètre
         ProductType product = findProductById(world, newproduct.getId());
@@ -250,4 +276,17 @@ public class Services {
         }
         return pt;
     }
+        public static void clearCache(String username){
+        try {
+            if(cache.containsKey(username)){
+                fileAccess.acquire();
+                World clone = cache.get(username);
+                writer.marshal(clone, new File(username + "-world.xml"));
+                fileAccess.release();
+            }
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
 }

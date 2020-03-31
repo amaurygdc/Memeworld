@@ -46,14 +46,18 @@ public class Webservices {
     @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     public Response getXml(@Context HttpServletRequest request) throws JAXBException, FileNotFoundException {
         String username = request.getHeader("X-user");
+        System.out.print("mle,e,");
         return Response.ok(services.readWorldFromXml(username)).build();
     }
+    
 
+    
     @PUT
     @Path("product")
     @Consumes({MediaType.APPLICATION_JSON})
     public void editProduct(@FormParam ("data") String data,@FormParam ("username") String username) throws FileNotFoundException, JAXBException {
         ProductType product = new Gson().fromJson(data, ProductType.class);
+        System.out.print("mle,e,");
         services.updateProduct(username, product);
     }
 
