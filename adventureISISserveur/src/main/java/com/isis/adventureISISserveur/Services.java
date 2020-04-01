@@ -144,8 +144,8 @@ public static World readWorldFromXml(String username){
     
     public ProductType findProductByID(World world, int id ){
         ProductType pt = null;
-        for (ProductType a :world.getProducts().product){
-            if (id == a.id){
+        for (ProductType a :world.getProducts().getProduct()){
+            if (id == a.getId()){
                 pt=a;
             }
         }
@@ -154,7 +154,7 @@ public static World readWorldFromXml(String username){
     
     public PallierType findManagerByName(World world, String name){
         PallierType manager=null;
-        for (PallierType a: world.getManagers().pallier){
+        for (PallierType a: world.getManagers().getPallier()){
             if(name.equals(a.getName())){
                 manager=a;
             }
@@ -183,7 +183,7 @@ public static World readWorldFromXml(String username){
             
         }
         else {
-            product.timeleft=product.vitesse;
+            product.setTimeleft(product.getVitesse());
             
         }
         List<PallierType> t= (List<PallierType>) product.getPalliers().getPallier();
